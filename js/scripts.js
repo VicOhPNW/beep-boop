@@ -15,7 +15,6 @@
 
 
 
-
 // --- Check if string has a number
   function isNotNum(string) {
     var regex = /[^0-9]/;
