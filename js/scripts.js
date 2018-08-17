@@ -1,9 +1,10 @@
 // --- Back-end logic
   function convertedNumber(string) {
     var initialInput = parseInt(string);
+
     if (isNotNum(string)) {
       alert("Please enter a valid number");
-    } else if (initialInput === 0) {
+    } else if ((hasZero(string))) {
       alert("Beep!");
     } else if (initialInput === 1) {
       alert("Boop!");
@@ -14,7 +15,11 @@
 
 
 
-
+// --- Check string for 0s
+  function hasZero(string) {
+    var zero = 0
+    return string.includes(0);
+  }
 
 
 
