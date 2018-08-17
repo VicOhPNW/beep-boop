@@ -3,12 +3,17 @@
     var initialInput = parseInt(string);
     if (isNotNum(string)) {
       alert("Please enter a valid number");
-    } else {
-      alert("it works")
+    } else if (initialInput === 0) {
+      alert("Beep!");
+    } else if (initialInput === 1) {
+      alert("Boop!");
     }
 
   };
 // --- End of convertedNumber function
+
+
+
 
 
 
