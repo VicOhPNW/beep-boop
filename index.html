@@ -7,27 +7,35 @@
     <script src="js/scripts.js"></script>
     <title>Beep-Boop</title>
   </head>
-
   <body>
     <div class ="container">
       <div class="jumbotron">
-        <h1>Beep-Boop Numbers</h1>
+        <img src="img/robot_joke.gif" alt="Robot Talk">
       </div>
+
+      <div class="info">
+        <p><span class="pop">Beep-boop</span> will return a range of numbers from 0 to the entered number with the following exceptions:</p>
+        <ol>
+          <li>Numbers that contain a 0 are replaced (all digits) with "Beep!"</li>
+          <li>Numbers that contain a 1 are replaced (all digits) with "Boop!"</li>
+          <li>Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."</li>
+        </ol>
+        <p>These exceptions are written from least to most important. The first exception will apply unless the second exception does, and the same with the second and third. So, for example, if your number is 10, Beep-boop will return "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."</p>
 
       <div class="form-container">
         <form id="form">
           <div class="form-group">
-            <label for="userInput">Enter a number!</label>
+            <label for="userInput"><h2>Enter a number!</h2></label>
             <input id="userInput" type="text" class="form-control">
           </div>
+
           <button class="btn btn-info" type="submit">Submit</button>
         </form>
       </div>
 
       <div class="result">
-        <h3>Response: <span class="userResult"></span></h3>
+        <h2>Response: <span id="userResult"></span></h2>
       </div>
-
     </div>
   </body>
 </html>

@@ -16,13 +16,15 @@ $(document).ready(function() {
       } else if (string.includes(0)) {
         alert("Beep!");
       } else if (otherNumbers(string)) {
-        $(".userResult").text(resultsArray)
+        $("#userResult").text(resultsArray)
       }
-    };  // --- End of convertedNumber function
+    };
 
-    $(".userResult").text(userOutput)
+    $("#userResult").text(userOutput)
   });
 
+
+// Back-end logic
 // --- Check if string has a number
       function isNotNum(string) {
         var regex = /[^0-9]/;
@@ -34,12 +36,17 @@ $(document).ready(function() {
         var resultsArray = [];
         for (var index = 0; index <= string; index += 1) {
         resultsArray.push(index);
-        $(".userResult").text(resultsArray)
+        $("#userResult").text(resultsArray)
         }
       }
 });
 
-// // --- Check if string has letters. Not using, was part of test.
+
+
+
+
+// --- Unused or tested functions.
+// --- Check if string has letters. Not using, was part of test.
 //   function isALetter(string) {
 //     var regex = /[a-zA-Z]/;
 //     return regex.test(string);
