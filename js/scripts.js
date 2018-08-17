@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $(".userResult").text(userOutput)
   });
-});
+
 
 
 // --- Back-end logic
@@ -18,14 +18,13 @@ $(document).ready(function() {
 
     if (isNotNum(string)) {
       alert("Please enter a valid number");
-    } else if (string.includes(1) && (string.includes(0))) {
+    } else if ((string.includes(1)) && (string.includes(0)) || (string.includes(1))) {
       alert("Boop!");
     } else if (string.includes(0)) {
       alert("Beep!");
+    } else if (otherNumbers(string)) {
+      $(".userResult").text(resultsArray)
     }
-    // else if (string.includes(0, 1)) {
-    //   alert("Bam!");
-    // }
   };  // --- End of convertedNumber function
 
 
@@ -35,14 +34,29 @@ $(document).ready(function() {
       return regex.test(string);
     }
 
+// --- String counts up to given number. Loop works but uncertain how to separate back-end with front-end and/or refactor.
+  function otherNumbers(string) {
+    var resultsArray = [];
+    for (var index = 0; index <= string; index += 1) {
+    resultsArray.push(index);
+    $(".userResult").text(resultsArray)
+    }
+  }
 
+});
 
+// // --- Check if string has letters. Not using, was part of test.
+//   function isALetter(string) {
+//     var regex = /[a-zA-Z]/;
+//     return regex.test(string);
+//   }
 
 
 // --- Check string for 1s
   // function hasOne(string) {
   //   return string.includes(1);
   // }
+
 
 // --- Check string for 0s
 //   function hasZero(string) {
