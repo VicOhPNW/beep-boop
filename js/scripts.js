@@ -18,12 +18,15 @@ $(document).ready(function() {
 
     if (isNotNum(string)) {
       alert("Please enter a valid number");
+    } else if (string.includes(1) && (string.includes(0))) {
+      alert("Boop!");
     } else if (string.includes(0)) {
       alert("Beep!");
-    } else if (string.includes(1)) {
-      alert("Boop!");
     }
-  };
+    // else if (string.includes(0, 1)) {
+    //   alert("Bam!");
+    // }
+  };  // --- End of convertedNumber function
 
 
 // --- Check if string has a number
@@ -33,7 +36,8 @@ $(document).ready(function() {
     }
 
 
-// --- End of convertedNumber function
+
+
 
 // --- Check string for 1s
   // function hasOne(string) {
