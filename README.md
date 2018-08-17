@@ -58,7 +58,8 @@ These exceptions are written from least to most important. The first exception s
 3. Enter and submit a number into the application and submit for a return.
 
 ## Known Bugs
-* The program does not meet the following exceptions:
+The program does not meet the following exceptions:
+
 1. Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   * Example Input: 9
   * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
