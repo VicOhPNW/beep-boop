@@ -4,26 +4,24 @@
 
     if (isNotNum(string)) {
       alert("Please enter a valid number");
-    } else if ((hasZero(string))) {
+    } else if (string.includes(0)) {
       alert("Beep!");
-    } else if (initialInput === 1) {
+    } else if (string.includes(1)) {
       alert("Boop!");
     }
 
   };
 // --- End of convertedNumber function
 
+// --- Check string for 1s
+  // function hasOne(string) {
+  //   return string.includes(1);
+  // }
 
-
-// --- Check string for 0s
-  function hasZero(string) {
-    var zero = 0
-    return string.includes(0);
-  }
-
-
-
-
+// // --- Check string for 0s
+//   function hasZero(string) {
+//     return string.includes(0);
+//   }
 
 // --- Check if string has a number
   function isNotNum(string) {
