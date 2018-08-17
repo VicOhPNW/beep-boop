@@ -34,12 +34,20 @@ These exceptions are written from least to most important. The first exception s
   * Example Input: 11
   * Example Output: "Boop!"
 
+* If a number includes 0 and 1, the program will return "Boop!"
+  * Example Input: 10
+  * Example Output: "Boop!"
+
 * Program will return a range of numbers between 0 and the provided number.
   * Example Input: 5
   * Example Output: "1, 2, 3, 4, 5"
 
 * Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   * Example Input: 9
+  * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
+
+* If a number includes 0 and/or 1 _*and*_ is divisble by 3, the program will return "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example Input: 21
   * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
 
 
