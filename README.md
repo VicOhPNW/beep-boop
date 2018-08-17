@@ -59,11 +59,11 @@ These exceptions are written from least to most important. The first exception s
 
 ## Known Bugs
 * The program does not meet the following exceptions:
-* Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+1. Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   * Example Input: 9
   * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
 
-* If a number includes 0 and/or 1 _*and*_ is divisble by 3, the program will return "I'm sorry, Dave. I'm afraid I can't do that."
+2. If a number includes 0 and/or 1 _*and*_ is divisble by 3, the program will return "I'm sorry, Dave. I'm afraid I can't do that."
   * Example Input: 21
   * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
 
